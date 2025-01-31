@@ -1,0 +1,6 @@
+@import url("https://cdn.jsdelivr.net/npm/marked/marked.min.js");
+
+#preview {
+    border: 1px solid red;
+    width: 80%;
+}
