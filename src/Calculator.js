@@ -1,3 +1,4 @@
+import './Calculator.css'
 import React from "react";
 
 class Calculator extends React.Component {
@@ -6,10 +7,11 @@ class Calculator extends React.Component {
     }
     render() {
         return (
+            <div style={{width: "100%", display: "flex", justifyContent: "center", alignItems: "center"}}>
             <div className="calculator">
                 <div className="formulaScreen"></div>
                 <div className="outputScreen" id="display">0</div>
-                <div>
+                <div style={{display: "flex", flexWrap: "wrap"}}>
                     <button className="jumbo" id="clear" value="AC" style={{background: "rgb(172, 57, 57)"}}>AC</button>
                     <button id="divide" value="/" style={{background: "rgb(102, 102, 102)"}}>/</button>
                     <button id="multiply" value="x" style={{background: "rgb(102, 102, 102)"}}>x</button>
@@ -26,8 +28,9 @@ class Calculator extends React.Component {
                     <button id="three" value="3">3</button>
                     <button className="jumbo" id="zero" value="0">0</button>
                     <button id="decimal" value=".">.</button>
-                    <button id="equals" value="=" style={{background: "rgb(0, 68, 102)", position: "absolute", height: 130, bottom: 5}}>=</button>
+                    <button id="equals" value="=" style={{background: "rgb(0, 68, 102)", position: "absolute", height: 130, right: 5, bottom: 5}}>=</button>
                 </div>
+            </div>
             </div>
         )
     }
